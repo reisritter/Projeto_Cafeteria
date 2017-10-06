@@ -1,0 +1,44 @@
+﻿<Window x:Class="WPFBolado.Windows.frmPagamento"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFBolado.Windows"
+        mc:Ignorable="d"
+        Title="frmPagamento" Height="456.383" Width="605.824" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock x:Name="txtbTotal" HorizontalAlignment="Left" Margin="175,30,0,0" TextWrapping="Wrap" Text="-" VerticalAlignment="Top" Width="107" FontSize="24" Foreground="#FF32C24D"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="43,36,0,0" TextWrapping="Wrap" Text="Total a pagar:" VerticalAlignment="Top" FontFamily="/WPFBolado;component/Font/#Raleway" FontSize="21.333" Foreground="#FF00A400"/>
+        <DataGrid ItemsSource="{Binding}" x:Name="dtgPag" AutoGenerateColumns="False" HorizontalAlignment="Left" Margin="316,101,0,0" VerticalAlignment="Top" Height="154" Width="244">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Pagamento" Binding="{Binding Nome}"/>
+                <DataGridTextColumn Header="Valor" Binding="{Binding Valor}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock x:Name="txtbRecebido" HorizontalAlignment="Left" Margin="312,279,0,0" TextWrapping="Wrap" Text="0,0" VerticalAlignment="Top" FontSize="21.333" Foreground="#FFFFC500" Width="71"/>
+        <TextBlock x:Name="txtbFalta" HorizontalAlignment="Left" Margin="312,315,0,0" TextWrapping="Wrap" Text="0,0" VerticalAlignment="Top" FontSize="21.333" Foreground="Red" Width="71"/>
+        <GroupBox x:Name="grbPag" Header="GroupBox" HorizontalAlignment="Left" Margin="20,101,0,0" VerticalAlignment="Top" Height="154" Width="281">
+            <Grid HorizontalAlignment="Left" Height="144" VerticalAlignment="Top" Width="271" Margin="0,0,-2,-12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="27*"/>
+                    <ColumnDefinition Width="236*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="txtDinheiro" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Grid.Column="1" PreviewKeyDown="txtDinheiro_PreviewKeyDown"/>
+                <Button Style="{DynamicResource Button-Cad-blue}" x:Name="btnAddDin" Content="Dinheiro" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top" Width="75" Click="btnAddDin_Click" Grid.Column="2" Height="23" FontSize="12"/>
+                <TextBox x:Name="txtDebito" HorizontalAlignment="Left" Height="23" Margin="10,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Grid.Column="1" PreviewKeyDown="txtDebito_PreviewKeyDown"/>
+                <Button Style="{DynamicResource Button-Cad-blue}"  x:Name="btnAddDeb" Content="Débito" HorizontalAlignment="Left" Margin="120,46,0,0" VerticalAlignment="Top" Width="75" Click="btnAddDeb_Click" Grid.Column="2" Height="23" FontSize="12"/>
+                <TextBox x:Name="txtCredito" HorizontalAlignment="Left" Height="23" Margin="10,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Grid.Column="1" PreviewKeyDown="txtCredito_PreviewKeyDown"/>
+                <Button Style="{DynamicResource Button-Cad-blue}" x:Name="btnAddCre" Content="Crédito" HorizontalAlignment="Left" Margin="120,85,0,0" VerticalAlignment="Top" Width="75" Click="btnAddCre_Click" Grid.Column="2" Height="23" FontSize="12"/>
+            </Grid>
+        </GroupBox>
+        <Button Style="{DynamicResource Button-Cad-blue2}" x:Name="btnConcluir" Content="Concluir" HorizontalAlignment="Left" Margin="33,354,0,0" VerticalAlignment="Top" Width="75" Click="btnConcluir_Click"/>
+        <Button Style="{DynamicResource Button-Cad-blue2}" x:Name="btnDel" Content="Del" HorizontalAlignment="Left" Margin="479,36,0,0" VerticalAlignment="Top" Width="75" Click="btnDel_Click"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="222,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="/WPFBolado;component/Font/#Raleway" FontSize="18.667"><Run Text="Recebido"/><Run Text=":"/></TextBlock>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="222,320,0,0" TextWrapping="Wrap" Text="Faltando:" VerticalAlignment="Top" FontSize="18.667" FontFamily="/WPFBolado;component/Font/#Raleway" Foreground="Red"/>
+        <TextBlock x:Name="txtbDinheiro" HorizontalAlignment="Left" Margin="497,279,0,0" TextWrapping="Wrap" Text="0,0" VerticalAlignment="Top" FontSize="21.333" Foreground="#FFFFC500" Width="57"/>
+        <TextBlock x:Name="txtbTroco" HorizontalAlignment="Left" Margin="497,314,0,0" TextWrapping="Wrap" Text="0,0" VerticalAlignment="Top" FontSize="21.333" Foreground="#FF32C24D" Width="57"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="419,284,0,0" TextWrapping="Wrap" Text="Dinheiro:" VerticalAlignment="Top" FontFamily="/WPFBolado;component/Font/#Raleway" FontSize="18.667"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="419,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" FontFamily="/WPFBolado;component/Font/#Raleway" FontSize="18.667" Foreground="#FF00A400"><Run Text="Troco"/><LineBreak/><Run Text=":"/></TextBlock>
+    </Grid>
+</Window>

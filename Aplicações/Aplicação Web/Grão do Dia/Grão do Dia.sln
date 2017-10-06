@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Grão do Dia", ".", "{FFE41757-9C8D-4473-B80F-92BB8BEEFB78}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Grão do Dia"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\Grão do Dia\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Grão do Dia\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Grão do Dia"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\Grão do Dia\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Grão do Dia\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1153"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFE41757-9C8D-4473-B80F-92BB8BEEFB78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE41757-9C8D-4473-B80F-92BB8BEEFB78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

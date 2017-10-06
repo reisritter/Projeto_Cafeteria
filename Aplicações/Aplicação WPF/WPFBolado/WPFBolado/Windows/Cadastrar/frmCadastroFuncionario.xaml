@@ -1,0 +1,91 @@
+﻿<Window x:Class="WPFBolado.Windows.Cadastrar.frmCadastroFuncionario"
+        xmlns:wpfForm= "clr-namespace:System.Windows.Forms"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFBolado.Windows.Cadastrar"
+        mc:Ignorable="d"
+        Title="Cadastro de Funcionário" Height="581.979" Width="538" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <GroupBox x:Name="groupBox" Header="Dados Principais" HorizontalAlignment="Left" Margin="28,10,0,0" VerticalAlignment="Top" Height="133" Width="472">
+            <Grid HorizontalAlignment="Left" Height="113" Margin="10,10,-2,-12" VerticalAlignment="Top" Width="452">
+                <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="60,10,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="155" UndoLimit="30" MaxLength="30"/>
+                <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="60,38,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="155" MaxLength="30"/>
+                <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="14,38,0,0" TextWrapping="NoWrap" Text="Email:" VerticalAlignment="Top"/>
+                <ComboBox ItemsSource="{Binding}" x:Name="cmbCargo" HorizontalAlignment="Left" Margin="60,66,0,0" VerticalAlignment="Top" Width="155"/>
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="NoWrap" Text="Nome:" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="11,66,0,0" TextWrapping="NoWrap" VerticalAlignment="Top"><Run Text="Cargo"/><Run Text=":"/></TextBlock>
+                <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="245,13,0,0" TextWrapping="NoWrap" VerticalAlignment="Top"><Run Text="CPF"/><Run Text=":"/></TextBlock>
+                <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="245,41,0,0" TextWrapping="NoWrap" VerticalAlignment="Top"><Run Text="Telefone"/><Run Text=":"/></TextBlock>
+                <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Height="23" Margin="312,13,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="120" PreviewKeyDown="txtCPF_PreviewKeyDown" MaxLength="15"/>
+                <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="312,41,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="120" PreviewKeyDown="txtTelefone_PreviewKeyDown" MaxLength="15"/>
+                <TextBlock Visibility="Hidden" x:Name="lblTelefone" HorizontalAlignment="Left" Margin="437,41,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblCPF" HorizontalAlignment="Left" Margin="437,13,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblCargo" HorizontalAlignment="Left" Margin="220,66,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblEmail" HorizontalAlignment="Left" Margin="220,38,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblNome" HorizontalAlignment="Left" Margin="220,10,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="groupBox1" Header="Endereço" HorizontalAlignment="Left" Margin="28,148,0,0" VerticalAlignment="Top" Height="134" Width="472">
+            <Grid HorizontalAlignment="Left" Height="114" Margin="10,10,-2,-12" VerticalAlignment="Top" Width="452">
+                <TextBox x:Name="txtEndereco" HorizontalAlignment="Left" Height="23" Margin="97,9,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="118" MaxLength="30"/>
+                <TextBox x:Name="txtCidade" HorizontalAlignment="Left" Height="23" Margin="97,37,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="118" MaxLength="30"/>
+                <TextBox x:Name="txtBairro" HorizontalAlignment="Left" Height="23" Margin="97,65,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="118" MaxLength="30"/>
+                <TextBox x:Name="txtCEP" HorizontalAlignment="Left" Height="23" Margin="310,10,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="120" PreviewKeyDown="txtCEP_PreviewKeyDown" MaxLength="10"/>
+                <TextBox x:Name="txtNumero" HorizontalAlignment="Left" Height="23" Margin="310,38,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="120" PreviewKeyDown="txtNumero_PreviewKeyDown" MaxLength="10"/>
+                <ComboBox x:Name="cmbUF" HorizontalAlignment="Left" Margin="310,66,0,0" VerticalAlignment="Top" Width="56">
+                    <ComboBoxItem Content="SP"/>
+                    <ComboBoxItem Content="MG"/>
+                    <ComboBoxItem Content="RJ"/>
+                </ComboBox>
+                <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="36,10,0,0" TextWrapping="NoWrap" Text="Endereço:" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="49,38,0,0" TextWrapping="NoWrap" Text="Cidade:" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="54,66,0,0" TextWrapping="NoWrap" VerticalAlignment="Top"><Run Text="Bairro"/><Run Text=":"/></TextBlock>
+                <TextBlock x:Name="textBlock9" HorizontalAlignment="Left" Margin="267,10,0,0" TextWrapping="NoWrap" VerticalAlignment="Top"><Run Text="CEP"/><Run Text=":"/></TextBlock>
+                <TextBlock x:Name="textBlock10" HorizontalAlignment="Left" Margin="244,38,0,0" TextWrapping="NoWrap" VerticalAlignment="Top"><Run Text="Número"/><Run Text=":"/></TextBlock>
+                <TextBlock x:Name="textBlock11" HorizontalAlignment="Left" Margin="273,66,0,0" TextWrapping="NoWrap" VerticalAlignment="Top"><Run Text="UF"/><Run Text=":"/></TextBlock>
+                <TextBlock Visibility="Hidden" x:Name="lblEndereco" HorizontalAlignment="Left" Margin="220,9,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblUF" HorizontalAlignment="Left" Margin="371,66,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblNumero" HorizontalAlignment="Left" Margin="435,38,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblCEP" HorizontalAlignment="Left" Margin="435,10,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblCidade" HorizontalAlignment="Left" Margin="220,37,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblBairro" HorizontalAlignment="Left" Margin="220,65,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblComplemento" HorizontalAlignment="Left" Margin="220,93,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+            </Grid>
+        </GroupBox>
+        <CheckBox x:Name="chbLogin" Content="Login" HorizontalAlignment="Left" Margin="31,287,0,0" VerticalAlignment="Top" Checked="chbLogin_Checked" Unchecked="chbLogin_Unchecked"/>
+        <GroupBox x:Name="grpLogin" Header="Login" HorizontalAlignment="Left" Margin="28,307,0,0" VerticalAlignment="Top" Height="123" Width="472">
+            <Grid HorizontalAlignment="Left" Height="113" Margin="10,0,-2,-12" VerticalAlignment="Top" Width="449">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="433*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Height="23" Margin="89,10,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="120" Grid.Column="1" MaxLength="30"/>
+                <TextBox x:Name="txtSenha" HorizontalAlignment="Left" Height="23" Margin="89,38,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="120" Grid.Column="1" MaxLength="30"/>
+                <TextBox x:Name="txtConfirmarSenha" HorizontalAlignment="Left" Height="23" Margin="89,66,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="120" Grid.Column="1" MaxLength="30"/>
+                <TextBox x:Name="txtLembrete" HorizontalAlignment="Left" Height="79" Margin="298,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" MaxLength="200"/>
+                <TextBlock x:Name="textBlock12" Grid.Column="1" HorizontalAlignment="Left" Margin="41,10,0,0" TextWrapping="NoWrap" VerticalAlignment="Top"><Run Text="Usuário"/><Run Text=":"/></TextBlock>
+                <TextBlock x:Name="textBlock13" Grid.Column="1" HorizontalAlignment="Left" Margin="49,38,0,0" TextWrapping="NoWrap" Text="Senha:" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlock14" HorizontalAlignment="Left" Margin="10,66,0,0" TextWrapping="NoWrap" Text="Confirmar senha:" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="textBlock15" Grid.Column="1" HorizontalAlignment="Left" Margin="240,10,0,0" TextWrapping="NoWrap" VerticalAlignment="Top"><Run Text="Lembrete"/><Run Text=":"/></TextBlock>
+                <TextBlock Visibility="Hidden" x:Name="lblUsuario" Grid.Column="1" HorizontalAlignment="Left" Margin="214,10,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblLembrete" Grid.Column="1" HorizontalAlignment="Left" Margin="423,10,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblSenha" Grid.Column="1" HorizontalAlignment="Left" Margin="214,38,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblConfirmaSenha" Grid.Column="1" HorizontalAlignment="Left" Margin="214,66,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+            </Grid>
+        </GroupBox>
+        <Button Style="{DynamicResource Button-Cad-green}" x:Name="btnCadastrar" HorizontalAlignment="Left" Margin="31,464,0,0" VerticalAlignment="Top" Width="110" Click="btnCadastrar_Click">
+            <StackPanel Orientation="Horizontal" Width="109" >
+                <Image Source="/Img/Prancheta2.png" Margin="5 0 5 0" Width="30" Height="30" />
+                <TextBlock Text="Cadastrar" VerticalAlignment="Center" FontFamily="Segoe UI"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{DynamicResource Button-Cad-green}" x:Name="btnSair" HorizontalAlignment="Left" Margin="397,464,0,0" VerticalAlignment="Top" Width="103" Click="btnSair_Click">
+            <StackPanel Orientation="Horizontal" Width="109" >
+                <Image Source="/Img/X.png" Margin="5 0 8 0" Width="25" Height="25" />
+                <TextBlock Text="Cancelar" VerticalAlignment="Center" FontFamily="Segoe UI"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

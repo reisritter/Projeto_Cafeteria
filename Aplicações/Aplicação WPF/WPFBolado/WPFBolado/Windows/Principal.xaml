@@ -1,0 +1,65 @@
+﻿<Window x:Name="frmPrincipal" x:Class="WPFBolado.Windows.Principal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFBolado.Windows"
+        mc:Ignorable="d"
+        Title="Principal" Height="591.5" Width="830" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+    <Grid  HorizontalAlignment="Center" VerticalAlignment="Center" Width="830" Height="650">
+
+        <StackPanel Margin="-126,60,0,530" HorizontalAlignment="Left" Width="334">
+            <Image Source="/Img/logoCoffe.png" Height="44" Margin="154,0,95,0" />
+        </StackPanel>
+
+        <Button Style="{DynamicResource Botao-Principal-Purple}" x:Name="btnProduto" HorizontalAlignment="Left" Margin="90,138,0,0" VerticalAlignment="Top" Click="btnProduto_Click" BorderBrush="{x:Null}" Height="204" Width="214" >
+            <StackPanel>
+                <Image Name="imagem" Height="70" Source="/Img/Produto.png" Stretch="Fill" Width="55">
+                </Image>
+                <TextBlock Margin="0 12 0 0" FontFamily="/WPFBolado;component/Font/#Raleway">Produto</TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{DynamicResource Botao-Principal-Green}" x:Name="btnFunc" HorizontalAlignment="Left" Margin="88,348,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="btnFunc_Click" Height="206" Width="216">
+            <StackPanel>
+                <Image Height="60" Source="/Img/Func.png" Stretch="Fill" Width="50"/>
+                <TextBlock Margin="0 12 0 0" FontFamily="/WPFBolado;component/Font/#Raleway">Funcionário</TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{DynamicResource Botao-Principal-Red}" x:Name="btnForn" HorizontalAlignment="Left" Margin="528,138,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Height="204" Width="216" Click="btnForn_Click" >
+            <StackPanel>
+                <Image Height="59" Source="/Img/Fornecedor.png" Stretch="Fill" Width="93"/>
+                <TextBlock Margin="0 12 0 0" Text="Fornecedor" FontFamily="/WPFBolado;component/Font/#Raleway"/>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{DynamicResource Botao-Principal-Orange}" x:Name="btnCaixa" HorizontalAlignment="Left" Margin="310,347,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="btnCaixa_Click" Height="206" Width="216">
+            <StackPanel>
+                <Image Height="70" Source="/Img/Caixa.png" Stretch="Fill" Width="70"/>
+                <TextBlock Margin="25 12 0 0" Text="Caixa" FontFamily="/WPFBolado;component/Font/#Raleway" Width="75"/>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{DynamicResource Botao-Principal-Blue}" x:Name="btnPedidos" HorizontalAlignment="Left" Margin="310,138,0,0" VerticalAlignment="Top" Click="btnPedidos_Click" BorderBrush="{x:Null}" Width="214" Height="204" >
+            <StackPanel>
+                <Image Height="70" Source="/Img/Prancheta.png" Stretch="Fill" Width="50"/>
+                <TextBlock Margin="0 12 0 0" Text="Pedido" FontFamily="/WPFBolado;component/Font/#Raleway"/>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{DynamicResource Botao-Principal-Gray}" x:Name="btnComp" HorizontalAlignment="Left" Margin="531,348,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Width="214" Height="206" >
+            <StackPanel>
+                <Image Height="70" Source="/Img/Pedido.png" Stretch="Fill" Width="50"/>
+                <TextBlock Margin="0 12 0 0" Text="#" Width="18" FontFamily="/WPFBolado;component/Font/#Raleway"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{DynamicResource Button-Cad-white}" x:Name="btnConfig" HorizontalAlignment="Left" Margin="750,60,0,0" VerticalAlignment="Top" Width="47" Height="42" Click="btnConfig_Click">
+            <StackPanel>
+                <Image Height="33" Source="/Img/engrenagemConfig.png" Stretch="Fill" Width="34"/>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>

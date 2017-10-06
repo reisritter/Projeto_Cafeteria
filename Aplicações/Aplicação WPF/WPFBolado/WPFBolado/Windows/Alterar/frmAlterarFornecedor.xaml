@@ -1,0 +1,68 @@
+﻿<Window x:Class="WPFBolado.Windows.Alterar.frmAlterarFornecedor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFBolado.Windows.Alterar"
+        mc:Ignorable="d"
+        Title="Alterar Fornecedor" Height="428.766" Width="538" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <GroupBox x:Name="groupBox" Header="Dados Principais" HorizontalAlignment="Left" Margin="28,10,0,0" VerticalAlignment="Top" Height="109" Width="472">
+            <Grid HorizontalAlignment="Left" Height="88" Margin="10,10,-2,-12" VerticalAlignment="Top" Width="452">
+                <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="60,10,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="155" UndoLimit="30" MaxLength="30"/>
+                <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="60,38,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="155" MaxLength="30"/>
+                <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="14,38,0,0" TextWrapping="NoWrap" Text="Email:" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="NoWrap" Text="Nome:" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="245,13,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="47"><Run Text="Gerente"/><Run Text=":"/></TextBlock>
+                <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="245,41,0,0" TextWrapping="NoWrap" VerticalAlignment="Top"><Run Text="Telefone"/><Run Text=":"/></TextBlock>
+                <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="312,41,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="120" PreviewKeyDown="txtTelefone_PreviewKeyDown" MaxLength="15"/>
+                <TextBlock Visibility="Hidden" x:Name="lblTelefone" HorizontalAlignment="Left" Margin="437,41,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblGerente" HorizontalAlignment="Left" Margin="437,13,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>                
+                <TextBlock Visibility="Hidden" x:Name="lblEmail" HorizontalAlignment="Left" Margin="220,38,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblNome" HorizontalAlignment="Left" Margin="220,10,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBox x:Name="txtGerente" HorizontalAlignment="Left" Height="23" Margin="312,13,0,0" VerticalAlignment="Top" Width="120" MaxLength="30"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="groupBox1" Header="Endereço" HorizontalAlignment="Left" Margin="28,124,0,0" VerticalAlignment="Top" Height="162" Width="472">
+            <Grid HorizontalAlignment="Left" Height="142" Margin="10,10,-2,-12" VerticalAlignment="Top" Width="452">
+                <TextBox x:Name="txtEndereco" HorizontalAlignment="Left" Height="23" Margin="97,9,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="118" MaxLength="30"/>
+                <TextBox x:Name="txtCidade" HorizontalAlignment="Left" Height="23" Margin="97,37,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="118" MaxLength="30"/>
+                <TextBox x:Name="txtBairro" HorizontalAlignment="Left" Height="23" Margin="97,65,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="118" MaxLength="30"/>
+                <TextBox x:Name="txtCEP" HorizontalAlignment="Left" Height="23" Margin="310,10,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="120" PreviewKeyDown="txtCEP_PreviewKeyDown" MaxLength="10"/>
+                <TextBox x:Name="txtNumero" HorizontalAlignment="Left" Height="23" Margin="310,38,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="120" PreviewKeyDown="txtNumero_PreviewKeyDown" MaxLength="10"/>
+                <ComboBox x:Name="cmbUF" HorizontalAlignment="Left" Margin="310,66,0,0" VerticalAlignment="Top" Width="56">
+                    <ComboBoxItem Content="SP"/>
+                    <ComboBoxItem Content="MG"/>
+                    <ComboBoxItem Content="RJ"/>
+                </ComboBox>
+                <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="36,10,0,0" TextWrapping="NoWrap" Text="Endereço:" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="49,38,0,0" TextWrapping="NoWrap" Text="Cidade:" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="54,66,0,0" TextWrapping="NoWrap" VerticalAlignment="Top"><Run Text="Bairro"/><Run Text=":"/></TextBlock>
+                <TextBlock x:Name="textBlock9" HorizontalAlignment="Left" Margin="267,10,0,0" TextWrapping="NoWrap" VerticalAlignment="Top"><Run Text="CEP"/><Run Text=":"/></TextBlock>
+                <TextBlock x:Name="textBlock10" HorizontalAlignment="Left" Margin="244,38,0,0" TextWrapping="NoWrap" VerticalAlignment="Top"><Run Text="Número"/><Run Text=":"/></TextBlock>
+                <TextBlock x:Name="textBlock11" HorizontalAlignment="Left" Margin="273,66,0,0" TextWrapping="NoWrap" VerticalAlignment="Top"><Run Text="UF"/><Run Text=":"/></TextBlock>
+                <TextBlock Visibility="Hidden" x:Name="lblEndereco" HorizontalAlignment="Left" Margin="220,9,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblUF" HorizontalAlignment="Left" Margin="371,66,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblNumero" HorizontalAlignment="Left" Margin="435,38,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblCEP" HorizontalAlignment="Left" Margin="435,10,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblCidade" HorizontalAlignment="Left" Margin="220,37,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblBairro" HorizontalAlignment="Left" Margin="220,65,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBlock Visibility="Hidden" x:Name="lblComplemento" HorizontalAlignment="Left" Margin="220,93,0,0" TextWrapping="NoWrap" Text="X" VerticalAlignment="Top" Foreground="Red" FontFamily="Segoe UI Black"/>
+                <TextBox x:Name="txtComplemento" HorizontalAlignment="Left" Height="23" Margin="97,95,0,0" VerticalAlignment="Top" Width="118" MaxLength="30"/>
+                <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="10,95,0,0" TextWrapping="Wrap" Text="Complemento:" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+        <Button Style="{DynamicResource Button-Cad-red}" x:Name="btnAlterar" HorizontalAlignment="Left" Margin="31,317,0,0" VerticalAlignment="Top" Width="110" Click="btnAlterar_Click">
+            <StackPanel Orientation="Horizontal" Width="90" >
+                <Image Source="/Img/Prancheta2.png" Margin="5 0 5 0" Width="30" Height="30" />
+                <TextBlock Text="Alterar" VerticalAlignment="Center" FontFamily="Segoe UI"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{DynamicResource Button-Cad-red}" x:Name="btnSair" HorizontalAlignment="Left" Margin="397,317,0,0" VerticalAlignment="Top" Width="103" Click="btnSair_Click">
+            <StackPanel Orientation="Horizontal" Width="109" >
+                <Image Source="/Img/X.png" Margin="5 0 8 0" Width="25" Height="25" />
+                <TextBlock Text="Cancelar" VerticalAlignment="Center" FontFamily="Segoe UI"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

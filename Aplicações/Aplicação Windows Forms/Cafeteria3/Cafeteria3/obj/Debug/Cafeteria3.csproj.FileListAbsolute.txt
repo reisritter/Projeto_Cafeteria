@@ -1,0 +1,62 @@
+c:\users\gabriel\documents\visual studio 2013\Projects\Cafeteria3\Cafeteria3\bin\Debug\Cafeteria3.exe.config
+c:\users\gabriel\documents\visual studio 2013\Projects\Cafeteria3\Cafeteria3\bin\Debug\Cafeteria3.exe
+c:\users\gabriel\documents\visual studio 2013\Projects\Cafeteria3\Cafeteria3\bin\Debug\Cafeteria3.pdb
+c:\users\gabriel\documents\visual studio 2013\Projects\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.csprojResolveAssemblyReference.cache
+c:\users\gabriel\documents\visual studio 2013\Projects\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmCadastroProduto.resources
+c:\users\gabriel\documents\visual studio 2013\Projects\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.Properties.Resources.resources
+c:\users\gabriel\documents\visual studio 2013\Projects\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.csproj.GenerateResource.Cache
+c:\users\gabriel\documents\visual studio 2013\Projects\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.exe
+c:\users\gabriel\documents\visual studio 2013\Projects\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.pdb
+c:\users\gabriel\documents\visual studio 2013\Projects\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmProduto.resources
+c:\users\gabriel\documents\visual studio 2013\Projects\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmLogin.resources
+c:\users\gabriel\documents\visual studio 2013\Projects\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmPrincipal.resources
+C:\Users\Gabriel\Documents\Visual Studio 2013\Projects\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmAlterarProduto.resources
+C:\Users\Gabriel\Documents\Visual Studio 2013\Projects\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmFuncionario.resources
+C:\Users\Gabriel\Documents\Visual Studio 2013\Projects\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmCadastroFuncionario.resources
+E:\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\bin\Debug\Cafeteria3.exe.config
+E:\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.exe
+E:\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.pdb
+E:\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\bin\Debug\Cafeteria3.exe
+E:\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\bin\Debug\Cafeteria3.pdb
+E:\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.csprojResolveAssemblyReference.cache
+E:\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmAlterarProduto.resources
+E:\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmCadastroFuncionario.resources
+E:\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmCadastroProduto.resources
+E:\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmFuncionario.resources
+E:\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmLogin.resources
+E:\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmPrincipal.resources
+E:\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmProduto.resources
+E:\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.Properties.Resources.resources
+E:\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\bin\Debug\Cafeteria3.exe.config
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.exe
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.pdb
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\bin\Debug\Cafeteria3.exe
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\bin\Debug\Cafeteria3.pdb
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmAlterarProduto.resources
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmCadastroFuncionario.resources
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmCadastroProduto.resources
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmFuncionario.resources
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmLogin.resources
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmPrincipal.resources
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmProduto.resources
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.Properties.Resources.resources
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Desktop\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.Principal2.resources
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\bin\Debug\Cafeteria3.exe.config
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.exe
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.pdb
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\bin\Debug\Cafeteria3.exe
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\bin\Debug\Cafeteria3.pdb
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmAlterarProduto.resources
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmCadastroFuncionario.resources
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmCadastroProduto.resources
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmFuncionario.resources
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmLogin.resources
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmPrincipal.resources
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.Principal2.resources
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.frmProduto.resources
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.Properties.Resources.resources
+C:\Users\Gabriel\Desktop\Escola\Etesp\2º Semestre\Projetão\Aplicação C#\Cafeteria3\Cafeteria3\obj\Debug\Cafeteria3.csproj.GenerateResource.Cache

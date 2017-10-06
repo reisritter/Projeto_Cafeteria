@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE3A96D7-8AF5-4962-A531-7270D7D016D2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WPFBolado</RootNamespace>
+    <AssemblyName>WPFBolado</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AvalonControlsLibrary">
+      <HintPath>..\..\..\..\..\Downloads\Release V2\Release V2\AvalonControlsLibrary\AvalonControlsLibrary\bin\Debug\AvalonControlsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BLL\CaixaBLL.cs" />
+    <Compile Include="BLL\CargoBLL.cs" />
+    <Compile Include="BLL\CategoriaBLL.cs" />
+    <Compile Include="BLL\FornecedorBLL.cs" />
+    <Compile Include="BLL\FuncionarioBLL.cs" />
+    <Compile Include="BLL\LoginBLL.cs" />
+    <Compile Include="BLL\MovimentacaoBLL.cs" />
+    <Compile Include="BLL\Movimentacao_PagamentoBLL.cs" />
+    <Compile Include="BLL\PagamentoBLL.cs" />
+    <Compile Include="BLL\PedidoBLL.cs" />
+    <Compile Include="BLL\ProdPedidoBLL.cs" />
+    <Compile Include="Codigos\Money.cs" />
+    <Compile Include="Codigos\ValCpf.cs" />
+    <Compile Include="DTO\CaixaDTO.cs" />
+    <Compile Include="DTO\CargoDTO.cs" />
+    <Compile Include="DTO\CategoriaDTO.cs" />
+    <Compile Include="DTO\FornecedorDTO.cs" />
+    <Compile Include="DTO\FuncionarioDTO.cs" />
+    <Compile Include="DTO\LoginDTO.cs" />
+    <Compile Include="DTO\MovimentacaoDTO.cs" />
+    <Compile Include="DTO\PagamentoDTO.cs" />
+    <Compile Include="DTO\PedidoDTO.cs" />
+    <Compile Include="DTO\ProdPedido.cs" />
+    <Compile Include="Windows\Alterar\frmAlterarFornecedor.xaml.cs">
+      <DependentUpon>frmAlterarFornecedor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Alterar\frmAlterarFuncionario.xaml.cs">
+      <DependentUpon>frmAlterarFuncionario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Alterar\frmAlterarProd.xaml.cs">
+      <DependentUpon>frmAlterarProd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Alterar\frmAlterarProdPed.xaml.cs">
+      <DependentUpon>frmAlterarProdPed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Cadastrar\frmCadastrarFornecedor.xaml.cs">
+      <DependentUpon>frmCadastrarFornecedor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Cadastrar\frmCadastroFuncionario.xaml.cs">
+      <DependentUpon>frmCadastroFuncionario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\frmCaixa.xaml.cs">
+      <DependentUpon>frmCaixa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\frmFornecedor.xaml.cs">
+      <DependentUpon>frmFornecedor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\frmFuncionario.xaml.cs">
+      <DependentUpon>frmFuncionario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\frmInformacaoFunc.xaml.cs">
+      <DependentUpon>frmInformacaoFunc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\frmLogin.xaml.cs">
+      <DependentUpon>frmLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\frmPagamento.xaml.cs">
+      <DependentUpon>frmPagamento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\frmPedidos.xaml.cs">
+      <DependentUpon>frmPedidos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\frmProduto.xaml.cs">
+      <DependentUpon>frmProduto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Principal.xaml.cs">
+      <DependentUpon>Principal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\CadastroProduto.xaml.cs">
+      <DependentUpon>CadastroProduto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Acesso.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BLL\ProdutoBLL.cs" />
+    <Compile Include="DTO\ProdutoDTO.cs" />
+    <Compile Include="Windows\PrincipalAtendente.xaml.cs">
+      <DependentUpon>PrincipalAtendente.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Windows\Alterar\frmAlterarFornecedor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Alterar\frmAlterarFuncionario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Alterar\frmAlterarProd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Alterar\frmAlterarProdPed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Cadastrar\frmCadastrarFornecedor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Cadastrar\frmCadastroFuncionario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\frmCaixa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\frmFornecedor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\frmFuncionario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\frmInformacaoFunc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\frmLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\frmPagamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\frmPedidos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\frmProduto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Principal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\CadastroProduto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PrincipalAtendente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Font\Raleway-ExtraLight.ttf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\Caixa.png" />
+    <Resource Include="Img\Func.png" />
+    <Resource Include="Img\cadastro.png" />
+    <Resource Include="Img\Pedido.png" />
+    <Resource Include="Img\Untitled-3.png" />
+    <Resource Include="Img\Fornecedor.png" />
+    <Resource Include="Img\Cadeado.png" />
+    <Resource Include="Img\Prancheta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\Produto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\grao2.png" />
+    <Resource Include="Img\logoCoffe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\Cafe1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\pen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\engrenagem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\lupa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\Polegar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\Hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\Prancheta2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\Camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\engrenagemConfig.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

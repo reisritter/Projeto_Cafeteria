@@ -1,0 +1,44 @@
+﻿<Window x:Class="WPFBolado.Windows.PrincipalAtendente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFBolado.Windows"
+        mc:Ignorable="d"
+        Title="Principal" Height="591.5" Width="830" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid  HorizontalAlignment="Center" VerticalAlignment="Center" Width="830" Height="650">
+
+        <StackPanel Margin="-126,60,0,530" HorizontalAlignment="Left" Width="334">
+            <Image Source="/Img/logoCoffe.png" Height="44" Margin="154,0,95,0" />
+        </StackPanel>
+
+        <Button Style="{DynamicResource Botao-Principal-Green}" x:Name="btnFunc" HorizontalAlignment="Left" Margin="200,138,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="btnFunc_Click" Height="206" Width="216">
+            <StackPanel>
+                <Image Height="60" Source="/Img/user.png" Stretch="Fill" Width="50"/>
+                <TextBlock Margin="0 12 0 0" FontFamily="/WPFBolado;component/Font/#Raleway" Text="Informações"/>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{DynamicResource Botao-Principal-Orange}" x:Name="btnCaixa" HorizontalAlignment="Left" Margin="421,347,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="btnCaixa_Click" Height="206" Width="216">
+            <StackPanel>
+                <Image Height="70" Source="/Img/Caixa.png" Stretch="Fill" Width="70"/>
+                <TextBlock Margin="25 12 0 0" Text="Caixa" FontFamily="/WPFBolado;component/Font/#Raleway" Width="75"/>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{DynamicResource Botao-Principal-Blue}" x:Name="btnPedidos" HorizontalAlignment="Left" Margin="423,138,0,0" VerticalAlignment="Top" Click="btnPedidos_Click" BorderBrush="{x:Null}" Width="214" Height="204" >
+            <StackPanel>
+                <Image Height="70" Source="/Img/Prancheta.png" Stretch="Fill" Width="50"/>
+                <TextBlock Margin="0 12 0 0" Text="Pedido" FontFamily="/WPFBolado;component/Font/#Raleway"/>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{DynamicResource Botao-Principal-Gray}" x:Name="btnComp" HorizontalAlignment="Left" Margin="202,348,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Width="214" Height="206" Click="btnComp_Click" >
+            <StackPanel>
+                <Image Height="70" Source="/Img/Pedido.png" Stretch="Fill" Width="50"/>
+                <TextBlock Margin="0 12 0 0" Text="#" Width="18" FontFamily="/WPFBolado;component/Font/#Raleway"/>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>
